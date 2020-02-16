@@ -32,7 +32,9 @@
    https://discordapp.com/channels/590951101600235531/675355362534096917
 
 
-- Compound
+- Compound  
+  - compound-finance / compound-protocol  
+    https://github.com/compound-finance/compound-protocol   
   - Compound API documentation  
     https://compound.finance/developers/api  
 
