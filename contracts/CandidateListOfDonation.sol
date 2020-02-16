@@ -17,9 +17,7 @@ contract CandidateListOfDonation is Ownable, TbStorage, TbConstants {
 
     address candidateListOfDonation[] public candidateList;
 
-    constructor() public {
-
-    }
+    constructor() public {}
 
     function testFunc() public returns (bool) {
         return MpConstants.CONFIRMED;

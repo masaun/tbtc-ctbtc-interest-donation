@@ -22,9 +22,11 @@ import "./CandidateListOfDonation.sol";
 contract DonateInterestIncome is Ownable, TbStorage, TbConstants {
 
     Deposit public deposit;
+    CandidateListOfDonation public candidateList;
 
-    constructor(address payable _depositAddress) public {
+    constructor(address payable _depositAddress, address _candidateList) public {
         deposit = Deposit(_depositAddress);
+        candidateList = CandidateListOfDonation(_candidateList);
     }
 
     function testFunc() public returns (bool) {
@@ -39,13 +41,17 @@ contract DonateInterestIncome is Ownable, TbStorage, TbConstants {
     }
 
 
-    function getCandidateListOfDonation(address _candidateListOfDonation) public returns (bool) {
-        // In progress
+    function _getCandidateListOfDonation() public view returns (address[]) {
+        return candidateList.getCandidateListOfDonation();
     }
 
 
-    function () returns(bool res) internal {
-        
+    /*** 
+     * @dev - Get interest income from deposited cTBTC by using compound.
+     ***/    
+    function getInterestIncomeFromCTBTC(address userAddr) public view returns (uint256) {
+        uint256 interestIncomeFromCTBTC;
+        return interestIncomeFromCTBTC;
     }
     
 
