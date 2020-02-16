@@ -38,4 +38,17 @@ contract DonateInterestIncome is Ownable, TbStorage, TbConstants {
         uint256 remainingTerm = deposit.remainingTerm();
     }
 
+
+    function getCandidateListOfDonation(address _candidateListOfDonation) public returns (bool) {
+        // In progress
+    }
+
+
+    function () returns(bool res) internal {
+        
+    }
+    
+
+    
+
 }

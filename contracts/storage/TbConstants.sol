@@ -7,8 +7,8 @@ contract TbConstants {
     /**
      * @dev - Reference from https://developer.kyber.network/docs/API_ABI-KyberNetworkProxy/
      */
-    address srcAddressTest = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee';
-    address walletAddressTest = "0x0000000000000000000000000000000000000000";
+    address initialAddress1 = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
+    address initialAddress2 = "0x0000000000000000000000000000000000000000";
 
     /**
      * @notice In Exp terms, 1e18 is 1, or 100%

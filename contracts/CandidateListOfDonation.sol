@@ -15,17 +15,23 @@ import "./storage/TbConstants.sol";
  */
 contract CandidateListOfDonation is Ownable, TbStorage, TbConstants {
 
-    constructor() public {
-        // @Notice - Ropsten
-        IERC20(_testERC20Ropsten);
-        IERC721(_testERC721Ropsten);
+    address candidateListOfDonation[] public candidateList;
 
-        testERC20Ropsten = _testERC20Ropsten;
-        testERC721Ropsten = _testERC721Ropsten;
+    constructor() public {
+
     }
 
     function testFunc() public returns (bool) {
         return MpConstants.CONFIRMED;
+    }
+
+    function candidateRegistry(address candidateAddress) public returns (address) {
+        candidateList.push(candidateAddress);
+        return candidateAddress;
+    }
+
+    function getCandidateListOfDonation() public view returns (address[]) {
+        return candidateList;
     }
 
 }
