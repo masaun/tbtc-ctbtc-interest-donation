@@ -15,7 +15,7 @@
     "console": "truffle console --network development",
     "compile:ropsten": "truffle compile --reset --network ropsten",
     "migrate:ropsten": "truffle migrate --reset --network ropsten",
-    "console:ropsten": "truffle console --network ropsten",
+    "console:ropsten": "truffle console --network ropsten"
   },
   "author": "masaun",
   "license": "ISC",
