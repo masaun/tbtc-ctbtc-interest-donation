@@ -5,6 +5,12 @@ pragma solidity ^0.5.11;
 contract TbConstants {
 
     /**
+     * @dev - Reference from https://developer.kyber.network/docs/API_ABI-KyberNetworkProxy/
+     */
+    address initialAddress1 = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
+    address initialAddress2 = "0x0000000000000000000000000000000000000000";
+
+    /**
      * @notice In Exp terms, 1e18 is 1, or 100%
      */
     uint256 constant hundredPercent = 1e18;

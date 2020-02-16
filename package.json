@@ -23,6 +23,7 @@
     "@keep-network/tbtc": "^0.6.0-pre1",
     "@truffle/hdwallet-provider": "^1.0.29",
     "dotenv": "^8.2.0",
-    "openzeppelin-solidity": "^2.3.0"
+    "openzeppelin-solidity": "^2.3.0",
+    "tbtc.js": "^0.6.3"
   }
 }
