@@ -21,15 +21,21 @@ import "./CandidateListOfDonation.sol";
  ***/
 contract DonateInterestIncome is Ownable, TbStorage, TbConstants {
 
-    constructor() public {}
+    Deposit public deposit;
+
+    constructor(address payable _depositAddress) public {
+        deposit = Deposit(_depositAddress);
+    }
 
     function testFunc() public returns (bool) {
         return MpConstants.CONFIRMED;
     }
 
-    /* @dev - Test funtion for @keep-network/tbtc/contracts/deposit/Deposit.sol */
-    function checkTerm(address payable _depositAddress) external {
-        uint256 remainingTerm = Deposit(_depositAddress).remainingTerm();
+    /*** 
+     * @dev - Test funtion for @keep-network/tbtc/contracts/deposit/Deposit.sol 
+     ***/
+    function checkTerm() external {
+        uint256 remainingTerm = deposit.remainingTerm();
     }
 
 }
