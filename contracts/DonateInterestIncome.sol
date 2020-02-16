@@ -50,11 +50,10 @@ contract DonateInterestIncome is Ownable, TbStorage, TbConstants {
      * @dev - Get interest income from deposited cTBTC by using compound.
      ***/    
     function getInterestIncomeFromCTBTC(address userAddr) public view returns (uint256) {
+        // In progress
         uint256 interestIncomeFromCTBTC;
         return interestIncomeFromCTBTC;
     }
-    
-
     
 
 }
